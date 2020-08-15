@@ -1,0 +1,27 @@
+import React from "react";
+import "./style.css";
+
+function Wrapper(props) {
+  return (
+  <div className="wrapper">
+        <form className="search">
+      <div className="form-group">
+        <label htmlFor="language">SearchByName:</label>
+        <input
+          value={props.search}
+          onChange={props.handleInputChange}
+          name="term"
+          list="term"
+          type="text"
+          className="form-control"
+          placeholder="Name"
+          id="term"
+        />
+      </div>
+    </form>
+    {props.children}</div>
+
+  )
+}
+
+export default Wrapper;

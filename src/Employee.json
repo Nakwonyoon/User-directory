@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "name": "Mark",
+    "image": "https://picsum.photos/200",
+    "role": "CEO",
+    "phone": "512-993-2312",
+    "email": "yoonnw1000@gmail.com" 
+  },
+  {
+    "id": 2,
+    "name": "Eric",
+    "image": "https://picsum.photos/200",
+    "role": "Mangaer",
+    "phone": "512-993-2312",
+    "email": "asd23@gmail.com" 
+  },
+  {
+    "id": 3,
+    "name": "Charlie",
+    "image": "https://picsum.photos/200",
+    "role": "CFO",
+    "phone": "512-123-2112",
+    "email": "asda123@gmail.com" 
+  },
+  {
+    "id": 4,
+    "name": "Jennie",
+    "image": "https://picsum.photos/200",
+    "role": "Employee",
+    "phone": "512-412-4123",
+    "email": "asdasda123@gmail.com" 
+  },
+  {
+    "id": 5,
+    "name": "Joy",
+    "image": "https://picsum.photos/200",
+    "role": "Whatever",
+    "phone": "512-233-1234",
+    "email": "asdasdas123@gmail.com" 
+  }
+ 
+]
