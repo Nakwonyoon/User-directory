@@ -3,11 +3,11 @@ import FriendCard from "./components/EmployeeCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import employees from "./Employee.json";
-// import SearchForm from "./components/SaerchForm"
 
 class App extends Component {
   state = {
-    employees
+    employees,
+    search:""
   };
 
   removeEmployee = id => {
@@ -20,19 +20,20 @@ class App extends Component {
     this.setState({ search });
   }
   handleInputChange = event => {
-    const value = event.target.value;
     const name = event.target.name;
+    const value = event.target.value;
     this.setState({
       [name]: value
     });
   };
+
   render() {
     return (
-      <Wrapper>
+      <Wrapper
+      >
         <Title>Friends List</Title>
         {this.state.employees.map(employee => (
           <FriendCard
-            searchByName = {this.searchByName}
             removeEmployee={this.removeEmployee}
             id={employee.id}
             key={employee.id}
