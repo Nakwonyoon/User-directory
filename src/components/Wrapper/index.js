@@ -6,7 +6,7 @@ function Wrapper(props) {
   <div className="wrapper">
         <form className="search">
       <div className="form-group">
-        <label htmlFor="language">SearchByName:</label>
+        <label>SearchByName:</label>
         <input
           value={props.search}
           onChange={props.handleInputChange}
@@ -18,6 +18,7 @@ function Wrapper(props) {
           id="term"
         />
       </div>
+    
     </form>
     {props.children}</div>
 

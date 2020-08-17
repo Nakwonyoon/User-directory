@@ -7,7 +7,8 @@ import employees from "./Employee.json";
 class App extends Component {
   state = {
     employees,
-    search:""
+    search:"",
+    name:"term"
   };
 
   removeEmployee = id => {
@@ -18,6 +19,7 @@ class App extends Component {
   searchByName = name => {
     const search = this.state.employees.filter(employee => employee.name !== name);
     this.setState({ search });
+    console.log(search);
   }
   handleInputChange = event => {
     const name = event.target.name;
@@ -26,6 +28,9 @@ class App extends Component {
       [name]: value
     });
   };
+  handleSortingByname= () => {
+
+  }
 
   render() {
     return (
@@ -44,6 +49,7 @@ class App extends Component {
             phone={employee.phone}
           />
         ))}
+          <button className="inline-block" onClick={this.handleSortingByname}>SortingByName</button>
       </Wrapper>
     );
   }
